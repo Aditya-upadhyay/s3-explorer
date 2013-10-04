@@ -1,3 +1,4 @@
 *.pyc
 .idea/
 .idea/*
+app.sqlite3
