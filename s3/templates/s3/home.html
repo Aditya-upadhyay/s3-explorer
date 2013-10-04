@@ -1,0 +1,20 @@
+{% extends "s3/base.html" %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% block content %}
+  <div class="well aws_form">
+    {% if error %}
+         <span class="wrong_credentials_alert">{{ error }}</span>
+    {% endif %}
+    <form action="/" method="post" class=" form  ">
+            {% csrf_token %}
+            {% bootstrap_form form horizontal=False %}
+            {% bootstrap_form_buttons %}
+                    <button type="submit" class="btn btn-primary get_buckets_button">
+                            {% bootstrap_icon "save" %} Get Buckets
+                    </button>
+            {% end_bootstrap_form_buttons %}
+    </form>
+  </div>
+{% endblock %}

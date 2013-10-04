@@ -1,0 +1,27 @@
+<head>
+     <link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+     <link href="{{STATIC_URL}}css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+     <link href="{{STATIC_URL}}css/bucket.css" rel="stylesheet" type="text/css" />
+     <link href="{{STATIC_URL}}css/datatables.css" rel="stylesheet" type="text/css" />
+     <script src="{{STATIC_URL}}js/jquery.min.js" ></script>
+     <script src="{{STATIC_URL}}js/bootstrap.min.js" ></script>
+     <script src="{{STATIC_URL}}js/jquery.dataTables.min.js"  ></script>
+     <script src="{{STATIC_URL}}js/datatables.js"  ></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/home">S3 Explorer</a>
+        </div>
+      </div>
+      {% if bucket_list %}
+        <a href="/clear/"><span class="clear_session glyphicon glyphicon-off"></span></a>
+      {% endif %}
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+</body>
