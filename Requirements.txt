@@ -1,2 +1,2 @@
-django-bootstrap3
-boto
+django-bootstrap3==1.0.0
+boto==2.3.0

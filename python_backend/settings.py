@@ -44,7 +44,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'bootstrap3',
-    'django_tables2',
     'django.contrib.staticfiles',
     's3',
 )
