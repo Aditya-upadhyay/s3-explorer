@@ -21,6 +21,7 @@
   height: 100%;
   box-shadow: 3px 0px 16px;
   overflow: auto;
+  padding-bottom: 5px;
   transition: all 0.4s ease 0s;
 }
 
@@ -267,4 +268,9 @@ a{
 .glyphicon-download{
     font-size: 20px;
     float: right;
+}
+.thead{
+    background-color: #0D141B;
+    color: white;
+
 }

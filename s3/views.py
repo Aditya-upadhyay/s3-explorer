@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from s3.models import AwsForm
 import boto
 
+
 def home(request):
       if not request.session.has_key("AWS_KEY"):
          if request.method == 'POST':
